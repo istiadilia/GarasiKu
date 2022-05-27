@@ -3,4 +3,4 @@ GarasiKu adalah platform online berbasis website yang berfungsi sebagai forum ta
 
 Front end : HTML, CSS, JS, Boostrap5 
 
-Back  end : Php, CodeIgneter, MySql
+Back  end : Php, Laravel, MySql

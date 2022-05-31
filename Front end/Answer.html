@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,15 +9,17 @@
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Answer a Question</title>
   </head>
+
   <body>
+
     <!-- navbar -->
     <nav>
       <div class="logo-navbar"><img src="assets/image/kompas.png" alt="logo" /></div>
       <h3 class="Judul">GarasiKu</h3>
       <div class="profile-navbar"><img src="" alt="" /></div>
-      <span class="iconify" data-icon="ion:information-circle-outline" data-width="45" data-height="45"></span>
       <h3 class="username">username</h3>
     </nav>
+
     <div class="jumbotron">
       <a class="satu" href="#">kembali ke beranda</a>
       <a class="back" href="#"> <span class="iconify" data-icon="eva:arrow-ios-back-outline" data-width="24" data-height="24"></span> </a>
@@ -24,14 +27,20 @@
       <h2>Oleh Username penanya, DD/MM/YY</h2>
     </div>
     <main>
-      <div class="jawab">
-        <p>
-          <input type="text" placeholder="Tuliskan jawaban anda" />
-        </p>
-        <p>
-          <input class="log" type="submit" id="done" value="submit" />
-        </p>
+
+      <!--box jawab pertanyaan-->
+      <div id="jawab-wrap">
+        <div class="jawab">
+          <p>
+            <input type="text" placeholder="Tuliskan jawaban anda" />
+          </p>
+          <p>
+            <input class="log" type="submit" id="done" value="submit" />
+          </p>
+        </div>
       </div>
+
+      <!--box tampilan jawaban-->
       <div class="tampilan">
         <div class="foto-tampilan"><img src="" alt="" /></div>
         <h3>Username Penjawab</h3>

@@ -8,29 +8,29 @@ body {
 
 /* Navbar */
 /*#layar-navbar {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  left: 0px;
-  top: 0px;
-
-  background: #c4c4c4;
-}
-*/
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #c4c4c4;
+  }
+  */
 
 nav {
   position: sticky !important;
   padding: 50px !important;
   top: 0 !important;
-
-  background: #c4c4c4;
+  box-sizing: border-box;
+  width: 100%;
+  background: #68656e;
 }
 
 .logo-navbar img {
   position: absolute;
-  width: 70px;
+  width: 60px;
   height: 50px;
-  left: 86px;
+  left: 5%;
   top: 25px;
 }
 
@@ -38,7 +38,7 @@ nav .profile-navbar img {
   position: absolute;
   width: 51px;
   height: 51px;
-  left: 1164px;
+  left: 85%;
   top: 25px;
 
   background: #ffffff;
@@ -57,10 +57,10 @@ nav .username {
   position: absolute;
   width: 101px;
   height: 24px;
-  left: 1230px;
+  left: 90%;
   top: 18px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -75,10 +75,10 @@ nav .Judul {
   position: absolute;
   width: 107px;
   height: 29px;
-  left: 165px;
+  left: 10%;
   top: 18px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -99,7 +99,7 @@ nav .Judul {
   left: 381px;
   top: 132px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -114,8 +114,9 @@ nav .Judul {
   height: 24px;
   left: 358px;
   top: 132px;
-
-  font-family: 'Inter';
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -131,7 +132,7 @@ div.jumbotron h1 {
   left: 379px;
   top: 195px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -147,7 +148,7 @@ div.jumbotron h2 {
   left: 381px;
   top: 246px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -158,6 +159,7 @@ div.jumbotron h2 {
 
 div.jawab {
   position: absolute;
+  box-sizing: border-box;
   width: 678px;
   height: 189px;
   left: 379px;
@@ -169,6 +171,7 @@ div.jawab {
 
 .jawab p input {
   position: absolute;
+  box-sizing: border-box;
   width: 600px;
   height: 77px;
   left: 41px;
@@ -218,7 +221,7 @@ div.tampilan {
   left: 106px;
   top: 38px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -233,7 +236,7 @@ div.tampilan {
   left: 106px;
   top: 70px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -250,7 +253,7 @@ div.tampilan {
   left: 37px;
   top: 130px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -266,7 +269,7 @@ div.tampilan {
   left: 37px;
   top: 164px;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -303,3 +306,33 @@ div.gambar-inputan {
   background: url('downvote.jpg') 0 0 no-repeat;
   cursor: pointer;
 }
+
+#create-account-wrap {
+  background-color: #eeedf1;
+  color: #8a8b8e;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+#create-account-wrap-register {
+  background-color: #eeedf1;
+  color: #ffff;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+}
+
+@media screen and (max-width: 768px) {
+  #login-form-wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #login-form-wrap {
+    width: 80%;
+  }
+} ;

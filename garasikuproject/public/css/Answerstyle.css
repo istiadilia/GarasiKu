@@ -195,13 +195,14 @@ body {
   }
   
   div.tampilan {
-    position: absolute;
+    position: relative;
     width: 678px;
     height: 450px;
     left: 379px;
-    top: 520px;
+    top: 220px;
     background: #c4c4c4;
     border-radius: 20px;
+    margin-top: 50px;
   }
   
   .foto-tampilan {

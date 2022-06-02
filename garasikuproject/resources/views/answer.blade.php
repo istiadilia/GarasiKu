@@ -26,7 +26,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/Answerstyle.css" />
+    <link rel="stylesheet" href="{{ url('/css/Answerstyle.css') }}" />
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Answer a Question</title>
   </head>
@@ -34,42 +34,52 @@
   <body>
     <!-- navbar -->
     <nav>
-      <div class="logo-navbar"><img src="img/logo-garasiku.png" alt="logo" /></div>
+      <div class="logo-navbar"><img src="{{ url('/img/logo-garasiku.png') }}" alt="logo" /></div>
       <h3 class="Judul">GarasiKu</h3>
-      <div class="profile-navbar"><img src="" alt="" /></div>
-      <h3 class="username">username</h3>
+      <div class="profile-navbar"><img src="{{ url('/img/user.png') }}" alt="logo" /></div>
+      <h3 class="username">{{ auth()->user()->username }}</h3>
     </nav>
 
     <div class="jumbotron">
-      <a class="satu" href="#">kembali ke beranda</a>
-      <a class="back" href="#"> <span class="iconify" data-icon="eva:arrow-ios-back-outline" data-width="24" data-height="24"></span> </a>
-      <h1>Pertanyaan akan tampil disini</h1>
-      <h2>Oleh Username penanya, DD/MM/YY</h2>
+      <a class="satu" href="/">kembali ke beranda</a>
+      <a class="back" href="/"> <span class="iconify" data-icon="eva:arrow-ios-back-outline" data-width="24" data-height="24"></span> </a>
+      <h1>{{$singleQuestion->quest_title}}</h1>
+      <h2>Oleh {{ $singleQuestion->user->username }}, {{ $singleQuestion->created_at->format('d-m-y') }}</h2>
+      {{-- <h3>{{$singleQuestion->quest_body}}</h3> --}}
     </div>
     <main>
       <!--box jawab pertanyaan-->
-      <div id="jawab-wrap">
-        <div class="jawab">
-          <p>
-            <input type="text" placeholder="Tuliskan jawaban anda" />
-          </p>
-          <p>
-            <input class="log" type="submit" id="done" value="submit" />
-          </p>
+      <form action="{{ url('answer') }}" method="post">
+        @csrf
+        <input type="hidden" name="quest_slug" value="{{ $singleQuestion->slug }}">
+        <div id="jawab-wrap">
+          <div class="jawab">
+            <p>
+              <input name="ans_body" type="text" placeholder="Tuliskan jawaban anda" />
+            </p>
+            <p>
+              <input class="log" type="submit" id="done" value="submit" />
+            </p>
+          </div>
         </div>
-      </div>
+        
+      </form>
+      
 
       <!--box tampilan jawaban-->
+      @forelse ($singleQuestion->answers as $answer)
       <div class="tampilan">
-        <div class="foto-tampilan"><img src="" alt="" /></div>
-        <h3>Username Penjawab</h3>
-        <h2>Dijawab pada DD/MM/YY</h2>
+        <div class="foto-tampilan"><img src="{{ url('/img/user.png') }}" alt="logo" /></div>
+        <h3>{{ $answer->user->username }}</h3>
+        <h2>Dijawab pada {{ $answer->created_at->format('d-m-y') }}</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates debitis itaque ab nostrum provident iste earum inventore. Nobis ut omnis dicta corrupti earum neque quia dolorem, hic quas eius facere sit laboriosam deleniti
-          et, officia cupiditate debitis explicabo possimus, amet soluta? Voluptatum doloribus totam repudiandae sed, sapiente necessitatibus doloremque magni quia fugiat esse enim, architecto nam recusandae earum vero! Optio nemos!
+          {{ $answer->ans_body }}
         </p>
         <!-- <div class="gambar-inputan"><img src="" alt="" /></div> -->
       </div>
+      @empty
+        <h6>belum ada jawaban</h6>
+      @endforelse
 
       <div id="voting">
         <div class="upvote"></div>

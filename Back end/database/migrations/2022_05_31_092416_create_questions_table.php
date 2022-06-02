@@ -17,6 +17,7 @@ class CreateQuestionsTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->string('quest_title');
+            $table->string('slug')->unique();
             $table->text('quest_body');
             $table->string('quest_pict');
             $table->integer('ans_count');

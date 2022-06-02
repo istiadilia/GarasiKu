@@ -22,7 +22,7 @@ use App\Http\Controllers\MakeQuestionController;
 
 // Route::get('/', [QuestionController::class, 'index'])->middleware('auth');
 
-Route::get('question/{question}', [QuestionController::class, 'show']);
+Route::get('question/{question:slug}', [QuestionController::class, 'show']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -33,6 +33,7 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('deletequestion/{question}', [QuestionController::class, 'delete']);
 Route::resource('/', MakeQuestionController::class)->middleware('auth');
+Route::get('/checkSlug', [MakeQuestionController::class, 'checkSlug'])->middleware('auth');
 
 
 Route::get('/about', function () {

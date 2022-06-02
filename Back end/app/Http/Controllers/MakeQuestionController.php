@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\question;
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
+
 
 class MakeQuestionController extends Controller
 {
@@ -15,6 +17,7 @@ class MakeQuestionController extends Controller
      */
     public function index()
     {
+        
         return view('question', [
             "tittle" => "question",
             "question" => question::all()
@@ -39,8 +42,10 @@ class MakeQuestionController extends Controller
      */
     public function store(Request $request)
     {
+        
         $validatedData = $request->validate([
             'quest_title' => 'required|max:255',
+            // 'slug' => 'required|unique:questions',
             'quest_body' => 'required',
             'quest_pict' => 'required',
         ]);
@@ -99,5 +104,10 @@ class MakeQuestionController extends Controller
 
         return redirect('/');
 
+    }
+
+    public function checkSlug(Request $request) {
+        $slug = SlugService::createSlug(question::class, 'slug', $request->title);
+        return response()->json(['slug' =>$slug]);
     }
 }

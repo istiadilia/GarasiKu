@@ -15,10 +15,10 @@ class QuestionController extends Controller
     //     ]);
     // }
 
-    public function show($id) {
+    public function show(question $question) {
         return view('answer', [
             "tittle" => "answer",
-            "singleQuestion" => question::find($id)
+            "singleQuestion" => $question
         ]);
     }
 

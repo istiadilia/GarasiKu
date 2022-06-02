@@ -4,4 +4,3 @@
 <h5>{{$singleQuestion->quest_body}}</h5>
 <h5>{{$singleQuestion->quest_pict}}</h5>
 <h5>{{$singleQuestion->ans_count}}</h5>
-

@@ -28,9 +28,8 @@ nav {
 
 .logo-navbar img {
   position: absolute;
-  width: 60px;
-  height: 50px;
-  left: 86px;
+  width: 48px;
+  left: 100px;
   top: 25px;
 }
 
@@ -44,11 +43,21 @@ nav .profile-navbar img {
   background: url(.png);
 }
 
-nav .iconify {
+#info {
   position: absolute;
   height: 51px;
   height: 51px;
-  left: 1400px;
+  left: 1350px;
+  top: 25px;
+  opacity: 50%;
+  color: #ffffff;
+}
+
+#logout {
+  position: absolute;
+  height: 51px;
+  height: 51px;
+  left: 1420px;
   top: 25px;
   opacity: 50%;
   color: #ffffff;
@@ -139,7 +148,7 @@ input.log[type='submit'] {
   position: absolute;
   width: 678px;
   height: 375px;
-  left: 481px;
+  left: 381px;
   top: 322px;
 
   background: #c4c4c4;
@@ -210,12 +219,44 @@ input.log[type='submit'] {
   left: 531px;
   top: 313px;
 
-  border: 2px solid #7d7d7d;
+  border: 2px solid none;
   border-radius: 10px;
 }
+
 #question-form-wrap1 .totaljawaban p {
   position: absolute;
   width: 100px;
+  height: 25px;
+  left: 12px;
+  top: 6px;
+  text-align: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #7d7d7d;
+}
+
+#question-form-wrap1 .jawabpertanyaan {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 224px;
+  height: 40px;
+  left: 31px;
+  top: 310px;
+
+  border: 2px solid #7d7d7d;
+  border-radius: 10px;
+}
+
+#question-form-wrap1 .jawabpertanyaan h2 {
+  position: absolute;
+  width: 200px;
   height: 25px;
   left: 12px;
   top: 6px;
@@ -303,7 +344,7 @@ input.log[type='submit'] {
   position: absolute;
   width: 124px;
   height: 40px;
-  left: 531px;
+  left: 431px;
   top: 313px;
 
   border: 2px solid #7d7d7d;

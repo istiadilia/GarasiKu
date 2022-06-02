@@ -42,13 +42,17 @@ class MakeQuestionController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $validatedData = $request->validate([
             'quest_title' => 'required|max:255',
             // 'slug' => 'required|unique:questions',
             'quest_body' => 'required',
-            'quest_pict' => 'required',
+            'quest_pict' => 'image|file|max:1024',
         ]);
+
+        if($request->file('quest_pict')) {
+            $validatedData['quest_pict'] = $request->file('quest_pict')->store('quest_image');
+        }
 
         $validatedData['user_id'] = auth()->user()->id;
 

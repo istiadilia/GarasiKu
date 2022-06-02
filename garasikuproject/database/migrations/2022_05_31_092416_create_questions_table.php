@@ -19,7 +19,7 @@ class CreateQuestionsTable extends Migration
             $table->string('quest_title');
             $table->string('slug')->unique();
             $table->text('quest_body');
-            $table->string('quest_pict');
+            $table->string('quest_pict')->nullable();
             $table->timestamp('post_quest_date')->nullable();
             $table->timestamps();
         });

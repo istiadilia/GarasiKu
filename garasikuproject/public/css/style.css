@@ -106,7 +106,7 @@ body {
   */
   
   #layar-main {
-    padding-top: 130px;
+    margin-top: 0px;
   }
   
   .kontent h1 {
@@ -145,11 +145,12 @@ body {
   }
   
   #question-form-wrap1 {
-    position: absolute;
+    position: relative;
     width: 678px;
     height: 420px;
     left: 381px;
     top: 322px;
+    margin-bottom: 50px;
   
     background: #c4c4c4;
     border-radius: 20px;

@@ -67,7 +67,7 @@
         <p>{{$quest->quest_body}}</p>
         <img id="gambar" src="img/user.png" alt="">
         <!-- Gambar pertanyaan yang tampil -->
-        <img id="gambar-pertanyaan" src="img/{{ $quest->quest_pict }}" alt="">
+        <img id="gambar-pertanyaan" src="{{ asset('storage/' . $quest->quest_pict) }}" alt="">
         <div class="jawabpertanyaan">
           <a href="/question/{{$quest->slug}}"><h2>Jawab Pertanyaan</h2></a>
         </div>

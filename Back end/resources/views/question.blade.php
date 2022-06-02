@@ -15,7 +15,6 @@
     <h5>{{$quest->quest_body}}</h5>
     <h5>{{$quest->quest_pict}}</h5>
     <h5>{{$quest->ans_count}}</h5>
-    {{-- <a href="/deletequestion/{{$quest->id}}">delete</a> --}}
     <button>
         <a href="/deletequestion/{{$quest->id}}">delete</a>
     </button>

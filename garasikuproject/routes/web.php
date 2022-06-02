@@ -3,6 +3,7 @@
 use App\Models\question;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\MakeQuestionController;
@@ -34,3 +35,5 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('deletequestion/{question}', [QuestionController::class, 'delete']);
 Route::resource('/', MakeQuestionController::class)->middleware('auth');
 Route::get('/checkSlug', [MakeQuestionController::class, 'checkSlug'])->middleware('auth');
+
+Route::post('answer', [AnswerController::class, 'store']);

@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\User;
+use App\Models\answer;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class question extends Model
 {
@@ -13,11 +15,11 @@ class question extends Model
     protected $guarded = ['id'];
 
     public function user() {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
     public function answers() {
-        return $this->hasMany(answer::class);
+        return $this->hasMany(answer::class, 'question_id', 'id');
     }
 
     public function sluggable(): array

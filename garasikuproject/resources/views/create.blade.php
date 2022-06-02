@@ -120,7 +120,7 @@
         <div class="tulis-pertanyaan">
           <h3>Tuliskan Pertanyaan Anda</h3>
           <p>
-            <input type="text" name="quest_body" id="quest_body" size="25px" maxlength="20" required />
+            <input type="text" name="quest_body" id="quest_body" size="25px" required />
           </p>
         </div>
         <div class="upload-image">

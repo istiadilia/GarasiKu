@@ -18,7 +18,6 @@ class CreateAnswersTable extends Migration
             $table->foreignId('question_id');
             $table->foreignId('user_id');
             $table->text('ans_body');
-            $table->string('ans_pict');
             $table->timestamp('post_ans_date')->nullable();
             $table->timestamps();
         });

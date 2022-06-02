@@ -51,7 +51,6 @@ class MakeQuestionController extends Controller
         ]);
 
         $validatedData['user_id'] = auth()->user()->id;
-        $validatedData['ans_count'] = auth()->user()->id;
 
         question::create($validatedData);
 

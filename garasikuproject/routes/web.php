@@ -26,7 +26,7 @@ Route::get('question/{question:slug}', [QuestionController::class, 'show']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
-Route::post('/logout', [LoginController::class, 'logout']);
+Route::get('/logout', [LoginController::class, 'logout']);
 
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
@@ -34,11 +34,3 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('deletequestion/{question}', [QuestionController::class, 'delete']);
 Route::resource('/', MakeQuestionController::class)->middleware('auth');
 Route::get('/checkSlug', [MakeQuestionController::class, 'checkSlug'])->middleware('auth');
-
-
-Route::get('/about', function () {
-    return view('about', [
-        "name" => "rozan",
-        "email" => "rojan@gmail.com"
-    ]);
-});

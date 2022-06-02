@@ -32,7 +32,6 @@ Route::get('/register', [RegisterController::class, 'index'])->middleware('guest
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('deletequestion/{question}', [QuestionController::class, 'delete']);
-
 Route::resource('/', MakeQuestionController::class)->middleware('auth');
 
 

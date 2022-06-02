@@ -18,7 +18,7 @@ class QuestionController extends Controller
     public function show($id) {
         return view('answer', [
             "tittle" => "answer",
-            "answer" => question::find($id)
+            "singleQuestion" => question::find($id)
         ]);
     }
 

@@ -157,13 +157,36 @@ div.jumbotron h2 {
   color: #000000;
 }
 
+div.jumbotron h3 {
+  position: absolute;
+  width: 600px;
+  height: 24px;
+  left: 381px;
+  top: 300px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+
+  color: #000000;
+}
+
+#image-question {
+  width: 110px;
+  margin-left: 381px;
+  margin-top: 350px;
+}
+
 div.jawab {
   position: absolute;
   box-sizing: border-box;
   width: 678px;
   height: 189px;
   left: 379px;
-  top: 293px;
+  top: 600px;
 
   background: #e5e5e5;
   border-radius: 20px;
@@ -194,12 +217,18 @@ input.log[type='submit'] {
   cursor: pointer;
 }
 
+div.belumadajawaban h5 {
+  position: absolute;
+  left: 379px;
+  top: 800px;
+}
+
 div.tampilan {
   position: absolute;
   width: 678px;
   height: 450px;
   left: 379px;
-  top: 520px;
+  top: 820px;
   background: #c4c4c4;
   border-radius: 20px;
 }

@@ -45,11 +45,10 @@
       <a class="back" href="/"> <span class="iconify" data-icon="eva:arrow-ios-back-outline" data-width="24" data-height="24"></span> </a>
       <h1>{{$singleQuestion->quest_title}}</h1>
       <h2>Oleh {{ $singleQuestion->user->username }}, {{ $singleQuestion->created_at->format('d-m-y') }}</h2>
-      {{-- <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat inventore ipsa quae, sit assumenda voluptates, incidunt dolorum, provident voluptatem molestias distinctio doloribus deleniti expedita? Fugit labore consectetur
-        accusantium quis doloribus?
+      <h3>
+        {{ $singleQuestion->quest_body }}
       </h3>
-      <img id="image-question" src="assets/image/kompas.png" alt="" /> --}}
+      <img id="image-question" src="{{ asset('storage/' . $singleQuestion->quest_pict) }}" alt="" />
     </div>
     <main>
       <!--box jawab pertanyaan-->
@@ -69,9 +68,7 @@
       </form>
       
       <!-- belum ada jawaban -->
-      {{-- <div class="belumadajawaban">
-        <h5>Belum Ada Jawaban</h5>
-      </div> --}}
+      
 
 
       <!--box tampilan jawaban-->
@@ -86,7 +83,9 @@
         <!-- <div class="gambar-inputan"><img src="" alt="" /></div> -->
       </div>
       @empty
-        <h5>belum ada jawaban</h5>
+      <div class="belumadajawaban">
+        <h5>Belum Ada Jawaban</h5>
+      </div>
       @endforelse
 
       <div id="voting">

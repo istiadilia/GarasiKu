@@ -224,13 +224,14 @@ div.belumadajawaban h5 {
 }
 
 div.tampilan {
-  position: absolute;
+  position: relative;
   width: 678px;
   height: 450px;
   left: 379px;
-  top: 820px;
+  top: 520px;
   background: #c4c4c4;
   border-radius: 20px;
+  margin-top: 30px;
 }
 
 .foto-tampilan {

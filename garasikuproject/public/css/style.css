@@ -150,7 +150,6 @@ body {
     height: 420px;
     left: 381px;
     top: 322px;
-    margin-bottom: 50px;
   
     background: #c4c4c4;
     border-radius: 20px;
@@ -184,7 +183,8 @@ body {
   
   #gambar-pertanyaan {
     position: absolute;
-    width: 125px;
+    width: 110px;
+  
     left: 37px;
     top: 255.8px;
   

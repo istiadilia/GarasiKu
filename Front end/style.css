@@ -8,59 +8,69 @@ body {
 
 /* Navbar */
 /*#layar-navbar {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    background: #c4c4c4;
-  }
-  */
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  background: #c4c4c4;
+}
+*/
 
 nav {
   position: sticky !important;
   padding: 50px !important;
   top: 0 !important;
-  box-sizing: border-box;
-  width: 100%;
+
   background: #68656e;
 }
 
 .logo-navbar img {
   position: absolute;
-  width: 60px;
-  height: 50px;
-  left: 5%;
+  width: 48px;
+  left: 100px;
   top: 25px;
 }
 
 nav .profile-navbar img {
   position: absolute;
-  width: 51px;
-  height: 51px;
-  left: 85%;
-  top: 25px;
+  left: 75.56%;
+  right: 20.9%;
+  top: 25%;
+  bottom: 24%;
 
-  background: #ffffff;
+  background: url(.png);
 }
 
-nav .iconify {
+#info {
   position: absolute;
   height: 51px;
   height: 51px;
-  left: 1400px;
+  left: 1350px;
   top: 25px;
   opacity: 50%;
+  color: #ffffff;
+}
+
+#logout {
+  position: absolute;
+  height: 51px;
+  height: 51px;
+  left: 1420px;
+  top: 25px;
+  opacity: 50%;
+  color: #ffffff;
 }
 
 nav .username {
   position: absolute;
   width: 101px;
   height: 24px;
-  left: 90%;
-  top: 18px;
+  left: 1230px;
+  top: 38px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -68,189 +78,91 @@ nav .username {
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: #ffffff;
 }
 
 nav .Judul {
   position: absolute;
   width: 107px;
   height: 29px;
-  left: 10%;
-  top: 18px;
+  left: 165px;
+  top: 38px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: black;
+  color: #ffffff;
 }
 
-/* jumbotron */
-.jumbotron {
-  top: 88px;
-  height: 163px;
+/* Konten */
+
+/* 
+#layar-main {
+  width: 100%;
+  height: 1024px;
+}
+*/
+
+#layar-main {
+  margin-top: 0px;
 }
 
-.jumbotron a.satu {
+.kontent h1 {
   position: absolute;
-  width: 210px;
-  height: 24px;
-  left: 381px;
-  top: 132px;
+  width: 928px;
+  height: 118px;
+  left: 86px;
+  top: 166px;
 
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #737373;
-}
-
-.jumbotron a.back {
-  position: absolute;
-  width: 210px;
-  height: 24px;
-  left: 358px;
-  top: 132px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #737373;
-}
-
-div.jumbotron h1 {
-  position: absolute;
-  width: 678px;
-  height: 36px;
-  left: 379px;
-  top: 195px;
-
-  font-family: 'Inter', sans-serif;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 50px;
+  line-height: 59px;
 
   color: #000000;
-}
-
-div.jumbotron h2 {
-  position: absolute;
-  width: 347px;
-  height: 24px;
-  left: 381px;
-  top: 246px;
-
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #000000;
-}
-
-div.jumbotron h3 {
-  position: absolute;
-  width: 600px;
-  height: 24px;
-  left: 381px;
-  top: 300px;
-
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: justify;
-
-  color: #000000;
-}
-
-#image-question {
-  width: 110px;
-  margin-left: 381px;
-  margin-top: 350px;
-}
-
-div.jawab {
-  position: absolute;
-  box-sizing: border-box;
-  width: 678px;
-  height: 189px;
-  left: 379px;
-  top: 600px;
-
-  background: #e5e5e5;
-  border-radius: 20px;
-}
-
-.jawab p input {
-  position: absolute;
-  box-sizing: border-box;
-  width: 600px;
-  height: 77px;
-  left: 41px;
-  top: 30px;
-
-  background: #ffffff;
-  border-radius: 10px;
 }
 
 input.log[type='submit'] {
   position: absolute;
-  width: 106px;
-  height: 39px;
-  left: 535px;
-  top: 125px;
+  width: 260px;
+  height: 68px;
+  right: 92px;
+  top: 141px;
   border: none;
-  color: #ffffff;
-  background: #4d94ff;
-  border-radius: 19.5px;
-  cursor: pointer;
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  background: #aba1a0;
+  border-radius: 40.5px;
 }
 
-div.belumadajawaban h5 {
-  position: absolute;
-  left: 379px;
-  top: 800px;
-}
-
-div.tampilan {
-  position: absolute;
+#question-form-wrap1 {
+  position: relative;
   width: 678px;
-  height: 450px;
-  left: 379px;
-  top: 820px;
+  height: 420px;
+  left: 381px;
+  top: 322px;
+
   background: #c4c4c4;
   border-radius: 20px;
 }
 
-.foto-tampilan {
+#question-form-wrap1 h4 {
   position: absolute;
-  width: 51px;
-  height: 51px;
-  left: 37px;
-  top: 38px;
-
-  background: #ffffff;
-}
-
-.tampilan h3 {
-  position: absolute;
-  width: 215px;
-  height: 24px;
+  width: 201px;
+  height: 22.61px;
   left: 106px;
-  top: 38px;
+  top: 50.87px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -258,110 +170,115 @@ div.tampilan {
 
   color: #000000;
 }
-.tampilan h2 {
-  position: absolute;
-  width: 215px;
-  height: 22px;
-  left: 106px;
-  top: 70px;
 
-  font-family: 'Inter', sans-serif;
+#question-form-wrap1 #gambar {
+  position: absolute;
+  width: 51px;
+  height: 48.04px;
+  left: 37px;
+  top: 35.8px;
+
+  background: url(.png);
+}
+
+#gambar-pertanyaan {
+  position: absolute;
+  width: 110px;
+
+  left: 37px;
+  top: 255.8px;
+
+  background: url(.png);
+}
+
+#question-form-wrap1 h2 {
+  position: absolute;
+  width: 600px;
+  height: 36.74px;
+  left: 37px;
+  top: 112.1px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #000000;
+}
+#question-form-wrap1 p {
+  position: absolute;
+  width: 600px;
+  height: 102.68px;
+  left: 37px;
+  top: 162px;
+
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+#question-form-wrap1 .totaljawaban {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 124px;
+  height: 40px;
+  left: 531px;
+  top: 313px;
+
+  border: 2px solid none;
+  border-radius: 10px;
+}
+
+#question-form-wrap1 .totaljawaban p {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  left: 12px;
+  top: 6px;
+  text-align: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
   /* identical to box height */
 
   color: #7d7d7d;
 }
 
-.tampilan h1 {
+#question-form-wrap1 .jawabpertanyaan {
+  box-sizing: border-box;
+
   position: absolute;
-  width: 600px;
-  height: 56px;
-  left: 37px;
-  top: 130px;
+  width: 224px;
+  height: 40px;
+  left: 31px;
+  top: 370px;
 
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #000000;
+  border: 2px solid #7d7d7d;
+  border-radius: 10px;
 }
 
-.tampilan p {
+#question-form-wrap1 .jawabpertanyaan h2 {
   position: absolute;
-  width: 600px;
-  height: 101px;
-  left: 37px;
-  top: 164px;
+  width: 200px;
+  height: 25px;
+  left: 12px;
+  top: 6px;
+  text-align: center;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  /* identical to box height */
 
-  color: #000000;
+  color: #7d7d7d;
 }
-
-div.gambar-inputan {
-  position: absolute;
-  height: 113px;
-  width: 142px;
-  left: 268px;
-  top: 372px;
-  border-radius: 0px;
-  text-align: center;
-
-  background: #000000;
-}
-
-/* Vote */
-#voting {
-  width: 30px;
-  height: 40px;
-}
-.upvote {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-.downvote {
-  width: 30px;
-  height: 20px;
-  background: url('downvote.jpg') 0 0 no-repeat;
-  cursor: pointer;
-}
-
-#create-account-wrap {
-  background-color: #eeedf1;
-  color: #8a8b8e;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px 0;
-  border-radius: 0 0 20px 20px;
-}
-
-#create-account-wrap-register {
-  background-color: #eeedf1;
-  color: #ffff;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px 0;
-  border-radius: 0 0 4px 4px;
-}
-
-@media screen and (max-width: 768px) {
-  #login-form-wrap {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #login-form-wrap {
-    width: 80%;
-  }
-} ;

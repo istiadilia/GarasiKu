@@ -78,7 +78,7 @@
         <!-- <div class="gambar-inputan"><img src="" alt="" /></div> -->
       </div>
       @empty
-        <h6>belum ada jawaban</h6>
+        <h5>belum ada jawaban</h5>
       @endforelse
 
       <div id="voting">

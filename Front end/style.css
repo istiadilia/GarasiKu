@@ -282,3 +282,10 @@ input.log[type='submit'] {
 
   color: #7d7d7d;
 }
+
+#question-form-wrap1 .delete {
+  margin-left: 610px;
+  padding-top: 370px;
+  text-decoration: none;
+  background-color: none;
+}

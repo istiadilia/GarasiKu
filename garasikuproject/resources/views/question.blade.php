@@ -71,6 +71,7 @@
         <div class="jawabpertanyaan">
           <a href="/question/{{$quest->slug}}"><h2>Jawab Pertanyaan</h2></a>
         </div>
+        <a href="/deletequestion/{{$quest->id}}">delete</a>
       </div>
       @endforeach
       
